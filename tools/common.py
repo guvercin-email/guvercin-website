@@ -21,7 +21,7 @@ CONTRIB = REPO + "/blob/main/README.md"
 # two slices and therefore the largest of the three downloads.
 VERSION = "0.1.0"
 RELEASE_DATE = {"en": "29 July 2026", "tr": "29 Temmuz 2026"}
-DMG_MB = 24  # guvercin_0.1.0_universal.dmg, 25,588,042 bytes
+DMG_MB = 28  # guvercin_0.1.0_universal.dmg, 28,922,411 bytes
 
 def shot(name, alt, eager=False, cls="frame"):
     load = "eager" if eager else "lazy"
