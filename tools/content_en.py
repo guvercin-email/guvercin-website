@@ -54,9 +54,9 @@ JSONLD = """<script type="application/ld+json">
   "softwareVersion": "0.1.0",
   "description": "a free and open source desktop email client with a calendar, contacts and tasks, storing everything in a local database on your own computer",
   "url": "https://guvercin.email/",
-  "downloadUrl": "https://github.com/herdem-herdem/guvercin-desktop/releases",
-  "license": "https://github.com/herdem-herdem/guvercin-desktop/blob/main/LICENSE",
-  "sameAs": "https://github.com/herdem-herdem/guvercin-desktop",
+  "downloadUrl": "https://github.com/guvercin-email/guvercin-desktop/releases",
+  "license": "https://github.com/guvercin-email/guvercin-desktop/blob/main/LICENSE",
+  "sameAs": "https://github.com/guvercin-email/guvercin-desktop",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" }
 }
 </script>
@@ -211,7 +211,7 @@ DOWNLOAD = f"""<main id="main">
     <div class="btn-row">
       <a class="btn btn--primary btn--lg" href="{RELEASES}" data-release-link data-os-button="long" target="_blank" rel="noopener">Download guvercin</a>
     </div>
-    <p class="small">version 0.1.0 · released [release date] · about [size] MB · macOS 11 or later</p>
+    <p class="small">version {VERSION} · released {RELEASE_DATE[LANG]} · about {DMG_MB} MB · macOS 11 or later</p>
     <p class="small"><a href="#all-downloads">not your system? see all downloads ↓</a></p>
     <p class="small">not ready to install? <a href="{TRY}" target="_blank" rel="noopener">try guvercin online →</a></p>
   </div>
@@ -559,7 +559,7 @@ OPEN_SOURCE = f"""<main id="main">
   <div class="wrap">
     <div class="card">
       <p class="overline">repository</p>
-      <h2 style="font-size:28px">herdem-herdem/guvercin-desktop</h2>
+      <h2 style="font-size:28px">guvercin-email/guvercin-desktop</h2>
       <p>a desktop email client built with Tauri, Rust and React. mail, calendar, contacts and tasks,
         stored locally in SQLite.</p>
       <p>

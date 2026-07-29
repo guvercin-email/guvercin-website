@@ -196,7 +196,7 @@ DOWNLOAD = f"""<main id="main">
     <div class="btn-row">
       <a class="btn btn--primary btn--lg" href="{RELEASES}" data-release-link data-os-button="long" target="_blank" rel="noopener">guvercin'i indir</a>
     </div>
-    <p class="small">sürüm 0.1.0 · yayın tarihi [yayın tarihi] · yaklaşık [boyut] MB · macOS 11 veya üzeri</p>
+    <p class="small">sürüm {VERSION} · yayın tarihi {RELEASE_DATE[LANG]} · yaklaşık {DMG_MB} MB · macOS 11 veya üzeri</p>
     <p class="small"><a href="#all-downloads">sistemin bu değil mi? bütün indirmeler ↓</a></p>
     <p class="small">kurmaya hazır değil misin? <a href="{TRY}" target="_blank" rel="noopener">guvercin'i çevrimiçi dene →</a></p>
   </div>
@@ -544,7 +544,7 @@ OPEN_SOURCE = f"""<main id="main">
   <div class="wrap">
     <div class="card">
       <p class="overline">depo</p>
-      <h2 style="font-size:28px">herdem-herdem/guvercin-desktop</h2>
+      <h2 style="font-size:28px">guvercin-email/guvercin-desktop</h2>
       <p>Tauri, Rust ve React ile yazılmış bir masaüstü e-posta uygulaması. posta, takvim, kişiler
         ve görevler, SQLite ile yerelde saklanır.</p>
       <p>

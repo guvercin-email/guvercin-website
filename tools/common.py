@@ -5,15 +5,23 @@ import os
 OUT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SITE = "https://guvercin.email"
 
-REPO = "https://github.com/herdem-herdem/guvercin-desktop"
+REPO = "https://github.com/guvercin-email/guvercin-desktop"
 RELEASES = REPO + "/releases"
 PRERELEASES = REPO + "/releases"
 ISSUES = REPO + "/issues"
 DISCUSSIONS = REPO + "/discussions"
 LICENSE_FILE = REPO + "/blob/main/LICENSE"
 README = REPO + "#readme"
-LOCALES = REPO + "/tree/main/locales"
+LOCALES = REPO + "/tree/main/frontend/src/locales"
 CONTRIB = REPO + "/blob/main/README.md"
+
+# The release the download page describes. Kept here rather than written into
+# the page bodies so a new version is one edit, not a hunt through two
+# languages. DMG_MB is the universal macOS build — the arch that is fused from
+# two slices and therefore the largest of the three downloads.
+VERSION = "0.1.0"
+RELEASE_DATE = {"en": "29 July 2026", "tr": "29 Temmuz 2026"}
+DMG_MB = 24  # guvercin_0.1.0_universal.dmg, 25,588,042 bytes
 
 def shot(name, alt, eager=False, cls="frame"):
     load = "eager" if eager else "lazy"
