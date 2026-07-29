@@ -85,6 +85,12 @@ for (const [label, name] of [['Calendar', 'calendar'], ['Contacts', 'contacts'],
   const { ctx, page } = await open()
   await page.getByRole('button', { name: label, exact: true }).first().click()
   await page.waitForTimeout(1800)
+  // Contacts opens on an empty detail pane. Pick someone, so the picture shows
+  // the card rather than the "select a contact" placeholder.
+  if (name === 'contacts') {
+    await page.getByText('Amara Diallo').first().click()
+    await page.waitForTimeout(1800)
+  }
   await shot(page, name)
   await ctx.close()
 }
