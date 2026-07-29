@@ -228,11 +228,10 @@ DOWNLOAD = f"""<main id="main">
         <p class="overline">macOS</p>
         <span data-os-pill></span>
         <h3>macOS 11 or later</h3>
-        <p>a disk image you drag into Applications. universal features, two builds — pick the one
-          that matches your chip.</p>
+        <p>a disk image you drag into Applications. one universal build — the same file runs
+          on Apple Silicon and Intel, so there is nothing to choose.</p>
         <div class="btn-row" style="flex-direction:column;align-items:stretch;gap:12px">
-          <a class="btn btn--primary" href="{RELEASES}" data-release-link target="_blank" rel="noopener">Apple Silicon (.dmg)</a>
-          <a class="btn btn--secondary" href="{RELEASES}" data-release-link target="_blank" rel="noopener">Intel (.dmg)</a>
+          <a class="btn btn--primary" href="{RELEASES}" data-release-link target="_blank" rel="noopener">Download (.dmg)</a>
         </div>
         <p class="small" style="margin-top:16px">format: .dmg</p>
       </div>
