@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="tr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>guvercin — macOS, Windows ve Linux için ücretsiz açık kaynak e-posta uygulaması</title>
+<meta name="description" content="guvercin, macOS, Windows ve Linux için ücretsiz ve açık kaynak bir masaüstü e-posta uygulaması. takvim, kişiler, görevler dahil. postan kendi makinende kalır.">
+<link rel="canonical" href="https://guvercin.email/tr/">
+<link rel="alternate" hreflang="en" href="https://guvercin.email/">
+<link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/">
+<link rel="alternate" hreflang="x-default" href="https://guvercin.email/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="guvercin">
+<meta property="og:title" content="guvercin — macOS, Windows ve Linux için ücretsiz açık kaynak e-posta uygulaması">
+<meta property="og:description" content="guvercin, macOS, Windows ve Linux için ücretsiz ve açık kaynak bir masaüstü e-posta uygulaması. takvim, kişiler, görevler dahil. postan kendi makinende kalır.">
+<meta property="og:url" content="https://guvercin.email/tr/">
+<meta property="og:locale" content="tr">
+<meta property="og:image" content="https://guvercin.email/assets/img/og-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="the guvercin dove mark and the wordmark on a charcoal background">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="guvercin — macOS, Windows ve Linux için ücretsiz açık kaynak e-posta uygulaması">
+<meta name="twitter:description" content="guvercin, macOS, Windows ve Linux için ücretsiz ve açık kaynak bir masaüstü e-posta uygulaması. takvim, kişiler, görevler dahil. postan kendi makinende kalır.">
+<meta name="twitter:image" content="https://guvercin.email/assets/img/og-card.png">
+<meta name="theme-color" content="#4A4B4B">
+<link rel="icon" href="../assets/img/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="../assets/img/favicon-32.png" sizes="32x32" type="image/png">
+<link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
+<link rel="manifest" href="../site.webmanifest">
+<link rel="stylesheet" href="../assets/css/style.css">
+<script>
+/* Theme and language, settled before first paint so nothing flashes and nobody
+   lands in the wrong language. Both are plain preferences, stored locally. */
+(function(){document.documentElement.classList.add("js");try{var t=localStorage.getItem("guvercin-theme");if(!t){t=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light";}document.documentElement.setAttribute("data-theme",t);}catch(e){}
+try{var here="tr",saved=null;try{saved=localStorage.getItem("guvercin-lang");}catch(e2){}
+var want=saved||((navigator.language||"en").toLowerCase().indexOf("tr")===0?"tr":"en");
+if(want!==here&&location.protocol.indexOf("http")===0){location.replace(want==="tr"?"https://guvercin.email/tr/":"https://guvercin.email/");}}catch(e3){}})();
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">içeriğe geç</a>
+<header class="site-header">
+  <div class="wrap site-header__inner">
+    <a class="brand" href="index.html" aria-label="guvercin ana sayfa"><img class="brand__mark--light" src="../assets/img/logo-mark-light.svg" width="34" height="32" alt=""><img class="brand__mark--dark" src="../assets/img/logo-mark-dark.svg" width="34" height="32" alt=""><span>guvercin</span></a>
+    <nav class="nav" aria-label="main">
+      <ul><li><a href="features.html">Özellikler</a></li><li><a href="download.html">İndir</a></li><li><a href="open-source.html">Açık Kaynak</a></li><li><a href="faq.html">SSS</a></li><li><a href="contact.html">İletişim</a></li></ul>
+    </nav>
+    <div class="header-actions">
+      <a class="btn btn--secondary btn--sm try-link" href="https://try.guvercin.email" target="_blank" rel="noopener">Çevrimiçi dene</a>
+      <a class="icon-btn github-link" href="https://github.com/herdem-herdem/guvercin-desktop" target="_blank" rel="noopener" aria-label="guvercin GitHub'da"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg></a>
+      <button class="icon-btn theme-toggle" type="button" aria-label="temayı değiştir"><svg class="icon-sun" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.2 4.2l1.6 1.6M18.2 18.2l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.2 19.8l1.6-1.6M18.2 5.8l1.6-1.6"/></svg><svg class="icon-moon" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.5 14.3A8.5 8.5 0 0 1 9.7 3.5a8.5 8.5 0 1 0 10.8 10.8Z"/></svg></button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="menü" aria-expanded="false" aria-controls="mobile-menu"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M3.5 7h17M3.5 12h17M3.5 17h17"/></svg></button>
+      <a class="btn btn--primary btn--sm" href="download.html">İndir</a>
+    </div>
+  </div>
+</header>
+<div class="mobile-panel" id="mobile-menu" hidden>
+  <ul><li><a href="features.html">Özellikler</a></li><li><a href="download.html">İndir</a></li><li><a href="open-source.html">Açık Kaynak</a></li><li><a href="faq.html">SSS</a></li><li><a href="contact.html">İletişim</a></li><li><a href="https://try.guvercin.email" target="_blank" rel="noopener">Çevrimiçi dene</a></li><li><a href="https://github.com/herdem-herdem/guvercin-desktop" target="_blank" rel="noopener">GitHub</a></li></ul>
+</div>
+<main id="main">
+
+<section class="hero">
+  <div class="wrap center">
+    <p class="overline"><span class="pill pill--yellow pill--dot">v0.1.0 · ücretsiz ve açık kaynak</span></p>
+    <h1>gelen kutun, kendi masaüstünde</h1>
+    <p class="lede">macOS, Windows ve Linux için ücretsiz ve açık kaynak bir e-posta uygulaması —
+      takvim, kişiler ve görevler de içinde. postan bizim değil, senin makinende durur.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href="download.html" data-os-button="long">Ücretsiz indir</a>
+      <a class="btn btn--secondary btn--lg" href="https://try.guvercin.email" target="_blank" rel="noopener">tarayıcında dene</a>
+    </div>
+    <p class="small">sonsuza dek ücretsiz · hesap gerekmez · takip yok ·
+      <a href="https://github.com/herdem-herdem/guvercin-desktop" target="_blank" rel="noopener">GitHub'da incele</a></p>
+  </div>
+  <div class="wrap hero__figure">
+    <div class="frame frame--hero"><img src="../assets/img/shot-mail.svg" width="1600" height="1000" alt="guvercin posta görünümü: solda klasör ağacı, ortada ileti listesi, sağda açık ileti" loading="eager" decoding="async" fetchpriority="high"></div>
+  </div>
+</section>
+
+<section class="trust">
+  <div class="wrap">
+    <ul>
+      <li>%100 açık kaynak</li>
+      <li>reklam yok, takip yok</li>
+      <li>her IMAP hesabıyla çalışır</li>
+      <li>64 dil</li>
+      <li>macOS, Windows ve Linux</li>
+    </ul>
+  </div>
+</section>
+
+<section class="section section--after-hero">
+  <div class="wrap">
+    <h2 class="visually-hidden">neler var</h2>
+    <div class="grid grid--4">
+      <div class="card card--link reveal" data-delay="0">
+        <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 13.5 20 6l15 7.5-15 7.5Z"/><path d="M5 20.5 20 28l15-7.5"/><path d="M5 27.5 20 35l15-7.5"/></svg>
+        <h3>bütün hesapların tek yerde</h3>
+        <p>istediğin kadar IMAP ve SMTP hesabı ekle, ya da tek tıkla Google ile giriş yap.</p>
+      </div>
+      <div class="card card--link reveal" data-delay="1">
+        <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="5.5" y="8.5" width="29" height="26" rx="4"/><path d="M5.5 16h29"/><path d="M13 5v7M27 5v7"/><path d="M12 23h4M18 23h4M24 23h4M12 29h4M18 29h4"/></svg>
+        <h3>postadan fazlası</h3>
+        <p>aynı pencerede bir takvim, bir adres defteri ve bir görev listesi.</p>
+      </div>
+      <div class="card card--link reveal" data-delay="2">
+        <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8.5" y="17.5" width="23" height="16" rx="4"/><path d="M14 17.5v-4a6 6 0 0 1 12 0v4"/><path d="M20 24v3"/></svg>
+        <h3>tasarımı gereği özel</h3>
+        <p>iletiler bilgisayarındaki şifreli yerel bir veritabanında durur; hiçbir şey bize
+          yüklenmez.</p>
+      </div>
+      <div class="card card--link reveal" data-delay="3">
+        <svg class="card__icon" width="40" height="40" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 33S6.5 25.4 6.5 16.4A6.9 6.9 0 0 1 20 13a6.9 6.9 0 0 1 13.5 3.4C33.5 25.4 20 33 20 33Z"/></svg>
+        <h3>senin kalır</h3>
+        <p>açık kaynak, sonsuza dek ücretsiz, abonelik yok ve yükseltilecek bir şey yok.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="wrap center">
+    <p class="overline">kurulum yok, hesap yok</p>
+    <h2>indirmeden önce guvercin'i dene</h2>
+    <p class="lede">canlı bir sürüm tarayıcında çalışıyor; diskine hiçbir şey koymadan posta
+      görünümünü, takvimi ve ayarları gezebilirsin.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href="https://try.guvercin.email" target="_blank" rel="noopener">try.guvercin.email'i aç</a>
+      <a class="btn btn--secondary btn--lg" href="download.html" data-os-button="long">guvercin'i indir</a>
+    </div>
+    <p class="small">asıl olan masaüstü uygulaması — bu sadece önce bir göz atmak için.</p>
+  </div>
+</section>
+
+<section class="section section--alt">
+  <div class="wrap">
+    <div class="split">
+      <div class="split__media reveal">
+        <div class="frame"><img src="../assets/img/shot-offline.svg" width="1600" height="1000" alt="üstte çevrimdışı uyarısı olan posta görünümü, iletiler yerel kopyadan okunmaya devam ediyor" loading="lazy" decoding="async"></div>
+      </div>
+      <div class="reveal">
+        <h2>masaüstü uygulaması gibi çalışan e-posta</h2>
+        <p>sıralamasını değiştirebildiğin tam bir klasör ağacı, kapatabildiğin sohbet görünümü ve
+          gerçekten okuduğun yere taşıyabildiğin bir okuma bölmesi. tema ve yazı boyutu hesap
+          başına hatırlanır, yani iş hesabın kişisel hesabına hiç benzemek zorunda değil.</p>
+        <p>arama yerel veritabanı üzerinde çalışır; yani sinyalin olmadığı bir trende de çalışır.
+          ekleri ve satır içi görselleri de öyle.</p>
+        <p><a href="features.html">bütün özellikleri gör →</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--cream">
+  <div class="wrap prose">
+    <h2>postanı biz okuyamayız, başkası da okuyamaz</h2>
+    <p>bir guvercin bulutu yok. uygulama bilgisayarından doğrudan kendi sağlayıcına bağlanır ve
+      tuttuğu her şey — iletiler, taslaklar, ekler, takvim etkinlikleri, kişiler, görevler —
+      diskindeki yerel bir veritabanında durur. telemetri yok, çökme raporu yok, reklam yok ve
+      zaten açılacak bir hesap da yok.</p>
+    <p>satacak bir şeyimiz yok, çünkü hiçbir şey almıyoruz.</p>
+    <p><a href="privacy.html">gizlilik politikasını oku →</a></p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="wrap">
+    <h2>ilk sorulan sorular</h2>
+    <div class="accordion">
+      <details>
+        <summary>guvercin gerçekten ücretsiz mi?</summary>
+        <div class="answer">
+          <p>evet. ücretsiz ve açık kaynak; abonelik yok, ücretli sürüm yok, yükseltilecek bir şey
+            yok. yapamayacağın tek şey onu satmak.</p>
+        </div>
+      </details>
+      <details>
+        <summary>hangi e-posta sağlayıcıları çalışıyor?</summary>
+        <div class="answer">
+          <p>IMAP ve SMTP konuşan her sağlayıcı — Gmail, Outlook ve Hotmail, Yandex, iCloud,
+            Fastmail, üniversiten, kendi sunucun. Google hesapları tek tıkla giriş yapabilir.</p>
+        </div>
+      </details>
+      <details>
+        <summary>postam nerede saklanıyor?</summary>
+        <div class="answer">
+          <p>kendi bilgisayarındaki yerel bir veritabanında. hiçbir şey sunucularımıza ulaşmaz,
+            çünkü sunucu diye bir şey yok.</p>
+        </div>
+      </details>
+    </div>
+    <p style="margin-top:24px"><a href="faq.html">bütün soruları gör →</a></p>
+  </div>
+</section>
+
+</main>
+<section class="cta-band on-dark">
+  <div class="wrap">
+    <h2>gelen kutunu geri almaya hazır mısın?</h2>
+    <p>ücretsiz, açık kaynak ve hiçbir zaman eve telefon açmaz.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary btn--lg" href="download.html" data-os-button="long">guvercin'i indir</a>
+      <a class="btn btn--secondary btn--lg" href="https://github.com/herdem-herdem/guvercin-desktop" target="_blank" rel="noopener">GitHub'da incele</a>
+    </div>
+    <p class="small"><a href="https://try.guvercin.email" target="_blank" rel="noopener">ya da önce tarayıcında dene →</a></p>
+    <p class="small">macOS · Windows · Linux — sürüm 0.1.0</p>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h2>Ürün</h2>
+        <ul>
+          <li><a href="features.html">Özellikler</a></li>
+          <li><a href="download.html">İndir</a></li>
+          <li><a href="https://try.guvercin.email" target="_blank" rel="noopener">Çevrimiçi dene</a></li>
+          <li><a href="download.html#beta">Beta kanalı</a></li>
+          <li><a href="https://github.com/herdem-herdem/guvercin-desktop/releases" target="_blank" rel="noopener">Değişiklik günlüğü</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Proje</h2>
+        <ul>
+          <li><a href="https://github.com/herdem-herdem/guvercin-desktop" target="_blank" rel="noopener">GitHub</a></li>
+          <li><a href="open-source.html#contribute">Katkıda bulun</a></li>
+          <li><a href="open-source.html#roadmap">Yol haritası</a></li>
+          <li><a href="license.html">Lisans</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Destek</h2>
+        <ul>
+          <li><a href="faq.html">SSS</a></li>
+          <li><a href="contact.html">İletişim</a></li>
+          <li><a href="https://github.com/herdem-herdem/guvercin-desktop/issues" target="_blank" rel="noopener">Hata bildir</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Yasal</h2>
+        <ul>
+          <li><a href="privacy.html">Gizlilik Politikası</a></li>
+          <li><a href="license.html">Lisans</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="lang-picker">
+      <label for="lang-select">Dil</label>
+      <select id="lang-select" class="lang-select">
+        <optgroup label="bu web sitesi">
+          <option value="/" data-lang="en">English</option>
+          <option value="/tr/" data-lang="tr" selected>Türkçe</option>
+        </optgroup>
+        <optgroup label="uygulama bunları da konuşuyor (64)">
+          <option value="" disabled>العربية</option>
+          <option value="" disabled>العربية (البحرين)</option>
+          <option value="" disabled>العربية (فلسطين)</option>
+          <option value="" disabled>Azərbaycanca</option>
+          <option value="" disabled>Български</option>
+          <option value="" disabled>বাংলা</option>
+          <option value="" disabled>Bosanski</option>
+          <option value="" disabled>Català</option>
+          <option value="" disabled>Čeština</option>
+          <option value="" disabled>Dansk</option>
+          <option value="" disabled>Deutsch</option>
+          <option value="" disabled>Ελληνικά</option>
+          <option value="" disabled>Español</option>
+          <option value="" disabled>Eesti</option>
+          <option value="" disabled>فارسی</option>
+          <option value="" disabled>Suomi</option>
+          <option value="" disabled>Filipino</option>
+          <option value="" disabled>Français</option>
+          <option value="" disabled>हिन्दी</option>
+          <option value="" disabled>Hrvatski</option>
+          <option value="" disabled>Magyar</option>
+          <option value="" disabled>Հայերեն</option>
+          <option value="" disabled>Bahasa Indonesia</option>
+          <option value="" disabled>Íslenska</option>
+          <option value="" disabled>Italiano</option>
+          <option value="" disabled>日本語</option>
+          <option value="" disabled>ქართული</option>
+          <option value="" disabled>Қазақша</option>
+          <option value="" disabled>한국어</option>
+          <option value="" disabled>Кыргызча</option>
+          <option value="" disabled>ລາວ</option>
+          <option value="" disabled>Lietuvių</option>
+          <option value="" disabled>Latviešu</option>
+          <option value="" disabled>Македонски</option>
+          <option value="" disabled>Монгол</option>
+          <option value="" disabled>Bahasa Melayu</option>
+          <option value="" disabled>မြန်မာ</option>
+          <option value="" disabled>नेपाली</option>
+          <option value="" disabled>Nederlands</option>
+          <option value="" disabled>Norsk</option>
+          <option value="" disabled>ਪੰਜਾਬੀ</option>
+          <option value="" disabled>Polski</option>
+          <option value="" disabled>پښتو</option>
+          <option value="" disabled>Português</option>
+          <option value="" disabled>Română</option>
+          <option value="" disabled>Русский</option>
+          <option value="" disabled>සිංහල</option>
+          <option value="" disabled>Slovenčina</option>
+          <option value="" disabled>Slovenščina</option>
+          <option value="" disabled>Soomaali</option>
+          <option value="" disabled>Shqip</option>
+          <option value="" disabled>Shqip (Kosovë)</option>
+          <option value="" disabled>Српски</option>
+          <option value="" disabled>Svenska</option>
+          <option value="" disabled>Kiswahili</option>
+          <option value="" disabled>ไทย</option>
+          <option value="" disabled>Türkmençe</option>
+          <option value="" disabled>Українська</option>
+          <option value="" disabled>اردو</option>
+          <option value="" disabled>Oʻzbekcha</option>
+          <option value="" disabled>Tiếng Việt</option>
+          <option value="" disabled>中文</option>
+        </optgroup>
+      </select>
+      <p class="small">web sitesi İngilizce ve Türkçe; uygulamanın kendisi 64 dille geliyor.</p>
+    </div>
+    <div class="footer-base">
+      <img src="../assets/img/logo-mark-dark.svg" width="32" height="30" alt="">
+      <p>açık kaynak e-posta, kendi bilgisayarında</p>
+      <p class="copyright">© 2026 guvercin — açık kaynak, özenle yapıldı.</p>
+    </div>
+  </div>
+</footer>
+<script src="../assets/js/main.js" defer></script>
+</body>
+</html>

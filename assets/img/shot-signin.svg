@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img" aria-label="screenshot: adding an account">
+<rect x="0" y="0" width="1600" height="1000" rx="0" fill="#FFFFFF"/>
+<rect x="0" y="0" width="1600" height="48" rx="0" fill="#F7F7F6"/>
+<line x1="0" y1="48" x2="1600" y2="48" stroke="#E9EAEA" stroke-width="1"/>
+<circle cx="28" cy="24" r="6" fill="#E9EAEA"/>
+<circle cx="50" cy="24" r="6" fill="#E9EAEA"/>
+<circle cx="72" cy="24" r="6" fill="#E9EAEA"/>
+<text x="800.0" y="29" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600" fill="#7A7B7B" text-anchor="middle">guvercin</text>
+<g transform="translate(0,48)">
+<rect x="0" y="0" width="1600" height="918" rx="0" fill="#F7F7F6"/>
+<rect x="400" y="60" width="800" height="788" rx="20" fill="#FFFFFF" stroke="#E9EAEA" stroke-width="1"/>
+<text x="448" y="122" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="26" font-weight="700" fill="#4A4B4B" text-anchor="start">add an account</text>
+<text x="448" y="154" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#7A7B7B" text-anchor="start">guvercin will try to find your server settings for you.</text>
+<rect x="448" y="190" width="704" height="56" rx="12" fill="#FFFFFF" stroke="#E9EAEA" stroke-width="1"/>
+<circle cx="484" cy="218" r="13" fill="#2596BE" opacity="0.18"/>
+<text x="484" y="224" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#2596BE" text-anchor="middle">G</text>
+<text x="512" y="224" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600" fill="#4A4B4B" text-anchor="start">continue with Google</text>
+<line x1="448" y1="278" x2="770.0" y2="278" stroke="#E9EAEA" stroke-width="1"/>
+<text x="800.0" y="283" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="400" fill="#7A7B7B" text-anchor="middle">or</text>
+<line x1="830.0" y1="278" x2="1152" y2="278" stroke="#E9EAEA" stroke-width="1"/>
+<text x="448" y="326" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#7A7B7B" text-anchor="start">email address</text>
+<rect x="448" y="336" width="704" height="48" rx="12" fill="#FFFFFF" stroke="#E9EAEA" stroke-width="1"/>
+<text x="466" y="366" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#4A4B4B" text-anchor="start">you@example.com</text>
+<text x="448" y="418" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" fill="#7A7B7B" text-anchor="start">password</text>
+<rect x="448" y="428" width="704" height="48" rx="12" fill="#FFFFFF" stroke="#E9EAEA" stroke-width="1"/>
+<text x="466" y="458" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="400" fill="#4A4B4B" text-anchor="start">••••••••••••</text>
+<rect x="448" y="506" width="704" height="96" rx="12" fill="#FEF5C8" opacity="0.7"/>
+<text x="470" y="538" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600" fill="#4A4B4B" text-anchor="start">detected: imap.example.com : 993 (SSL)</text>
+<text x="470" y="564" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500" fill="#4A4B4B" text-anchor="start" opacity="0.8">smtp.example.com : 465 (SSL) — change manually</text>
+<rect x="448" y="764" width="200" height="48" rx="12" fill="#FECD01"/>
+<text x="548" y="794" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="700" fill="#4A4B4B" text-anchor="middle">add account</text>
+</g>
+<rect x="0" y="966" width="1600" height="34" rx="0" fill="#4A4B4B"/>
+<text x="20" y="988" font-family="system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="500" fill="#E9EAEA" text-anchor="start">screenshot: adding an account</text>
+</svg>

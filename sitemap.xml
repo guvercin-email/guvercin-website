@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://guvercin.email/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/download.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/download.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/download.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/download.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/download.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/download.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/features.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/features.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/features.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/features.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/features.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/open-source.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/open-source.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/open-source.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/open-source.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/open-source.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/open-source.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/faq.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/faq.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/faq.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/contact.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/contact.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/contact.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/privacy.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/privacy.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/license.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/license.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/license.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://guvercin.email/tr/license.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://guvercin.email/license.html"/>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://guvercin.email/tr/license.html"/>
+    <lastmod>2026-07-26</lastmod>
+    <priority>0.6</priority>
+  </url>
+</urlset>

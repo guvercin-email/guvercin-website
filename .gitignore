@@ -1,0 +1,15 @@
+# IDEs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python. tools/ generates the site; it is not part of what gets deployed.
+__pycache__/
+**/__pycache__/
+*.py[cod]
+
+# OS
+.DS_Store
+**/.DS_Store
+Thumbs.db
