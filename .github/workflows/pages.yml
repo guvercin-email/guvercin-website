@@ -1,0 +1,52 @@
+name: pages
+
+# Publishes the site to GitHub Pages at guvercin.email. There is no build step:
+# the HTML in this repo is what gets served. tools/ generated it and is excluded
+# below rather than uploaded alongside it.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # Assemble what actually gets served. Copying into a staging directory is
+      # what keeps tools/ — the Python that generated these pages — off the
+      # public site; serving it would be harmless but it is not part of the site.
+      - name: Stage the site
+        run: |
+          mkdir -p _site
+          rsync -a --exclude '.git' --exclude '.github' --exclude 'tools' \
+                --exclude '_site' --exclude '.gitignore' ./ _site/
+          # Pages runs Jekyll unless told not to, which would drop any file or
+          # directory whose name starts with an underscore.
+          touch _site/.nojekyll
+          echo 'guvercin.email' > _site/CNAME
+          ls -la _site/
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
