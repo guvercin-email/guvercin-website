@@ -410,6 +410,14 @@ img.brand__mark--dark { display: none; }
 }
 .frame--hero { box-shadow: var(--shadow-hero); }
 .frame img { display: block; width: 100%; height: auto; }
+
+/* Every screenshot ships twice, once per app theme, and only the one matching
+   the page is shown. The selectors carry .frame because the rule above is
+   `.frame img` — a bare `.shot--dark` would lose the specificity contest and
+   both would render stacked. */
+.frame .shot--dark { display: none; }
+[data-theme="dark"] .frame .shot--light { display: none; }
+[data-theme="dark"] .frame .shot--dark { display: block; }
 figure { margin: 0; }
 figcaption { font-size: 14px; color: var(--text-muted); margin-top: 12px; }
 

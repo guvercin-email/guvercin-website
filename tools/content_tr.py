@@ -63,7 +63,7 @@ INDEX = f"""<main id="main">
       <a href="{REPO}" target="_blank" rel="noopener">GitHub'da incele</a></p>
   </div>
   <div class="wrap hero__figure">
-    {shot('shot-mail.svg', 'guvercin posta görünümü: solda klasör ağacı, ortada ileti listesi, sağda açık ileti', eager=True, cls='frame frame--hero')}
+    {shot('mail', 'guvercin posta görünümü: solda klasör ağacı, ortada ileti listesi, sağda açık ileti', eager=True, cls='frame frame--hero')}
   </div>
 </section>
 
@@ -126,7 +126,7 @@ INDEX = f"""<main id="main">
   <div class="wrap">
     <div class="split">
       <div class="split__media reveal">
-        {shot('shot-offline.svg', 'üstte çevrimdışı uyarısı olan posta görünümü, iletiler yerel kopyadan okunmaya devam ediyor')}
+        {shot('offline', 'posta görünümünün üzerinde açılan ağ paneli internetin çevrimdışı olduğunu bildiriyor, ileti listesi yerel kopyadan okunmaya devam ediyor')}
       </div>
       <div class="reveal">
         <h2>masaüstü uygulaması gibi çalışan e-posta</h2>
@@ -326,7 +326,7 @@ DOWNLOAD = f"""<main id="main">
   <div class="wrap">
     <div class="split">
       <div class="split__media reveal">
-        {shot('shot-signin.svg', 'Google ile devam et düğmesi ve otomatik bulunan IMAP/SMTP ayarlarıyla hesap ekleme penceresi')}
+        {shot('signin', 'Google ile devam et düğmesi ve otomatik bulunan IMAP/SMTP ayarlarıyla hesap ekleme penceresi')}
       </div>
       <div class="reveal">
         <h2>üç adımda hesabını ekle</h2>
@@ -394,7 +394,7 @@ def feature(anchor, title, media, paragraphs, bullets=None, flip=False):
 
 FEATURES_BODY = "".join([
     feature("mail", "uslu duran bir gelen kutusu",
-            shot("shot-mail.svg", "klasör ağacı, ileti listesi ve okuma bölmesinin yan yana durduğu posta görünümü"),
+            shot("mail", "klasör ağacı, ileti listesi ve okuma bölmesinin yan yana durduğu posta görünümü"),
             ["birden fazla IMAP ve SMTP hesabı yan yana, her biri kendi yerel veritabanıyla. "
              "sıralamasını değiştirebildiğin tam bir klasör ağacı, özel etiket sıralaması ve "
              "okunmamış sayılarının nasıl görüneceğine dair bir seçim.",
@@ -406,7 +406,7 @@ FEATURES_BODY = "".join([
              "bir göndereni engelle, kural yerelde saklanır",
              "iletiyi yazdır"]),
     feature("sign-in", "Google için tek tık, diğer herkes için düz IMAP",
-            shot("shot-signin.svg", "elle e-posta ve parola girişinin üstünde Google ile giriş sunan hesap ekleme penceresi"),
+            shot("signin", "elle e-posta ve parola girişinin üstünde Google ile giriş sunan hesap ekleme penceresi"),
             ["“Google ile devam et”, sistem tarayıcında bir OAuth2 (XOAUTH2) PKCE akışı çalıştırır; "
              "yani parolan guvercin'e hiç yazılmaz ve hiçbir jeton arayüzden geçmez. uygulama çalışan "
              "bir OAuth istemcisiyle geliyor, o yüzden kutudan çıktığı gibi çalışır.",
@@ -415,7 +415,7 @@ FEATURES_BODY = "".join([
              "Yandex, iCloud, Fastmail ve kendi sunucularınla çalışır."],
             flip=True),
     feature("composer", "düzgün yaz",
-            shot("shot-composer.svg", "biçimlendirme şeridi, adres alanları ve iki ekli dosyası olan ayrı pencerede yazma ekranı"),
+            shot("composer", "biçimlendirme şeridi, adres alanları ve iki ekli dosyası olan ayrı pencerede yazma ekranı"),
             ["biçimlendirme şeritli zengin metin editörü, sürükle bırak ekler ve ayrı bir yerel "
              "pencereye çıkarabildiğin bir yazma ekranı. taslaklar yerelde kaydedilir ve sonra "
              "gönderilebilir.",
@@ -423,28 +423,28 @@ FEATURES_BODY = "".join([
              "dosya ekliyken bir ileti başlat — Windows ve Linux'ta otomatik olarak kaydedilir. "
              "macOS'te dosyayı pencereye sürükle ya da Birlikte Aç'ı kullan."]),
     feature("calendar", "haftan, aynı pencerede",
-            shot("shot-calendar.svg", "yerleşik takvimin renkli etkinlikler içeren ay görünümü"),
+            shot("calendar", "yerleşik takvimin renkli etkinlikler içeren ay görünümü"),
             ["hesap başına birden fazla takvim, kendi sunucuna karşı CalDAV eşitlemesi, Google Takvim "
              "eşitlemesi ve .ics içe/dışa aktarımı.",
              "başka bir sekmede değil, postanın yanında durur; bütün mesele de bu."],
             flip=True),
     feature("contacts", "gerçekten senin olan bir adres defteri",
-            shot("shot-contacts.svg", "aranabilir liste ve kişi detay panelinin bulunduğu kişiler görünümü"),
+            shot("contacts", "aranabilir liste ve kişi detay panelinin bulunduğu kişiler görünümü"),
             ["kişi listeleri ve gruplar, vCard içe/dışa aktarımı ve Google Kişiler eşitlemesi.",
              "gönderen avatarları ileti görüntülenirken çözülür, adresler sen yazarken tamamlanır."]),
     feature("tasks", "postanın yanında yapılacaklar",
-            shot("shot-tasks.svg", "yan yana üç görev listesi, kimi maddeler tamamlanmış"),
+            shot("tasks", "yan yana üç görev listesi, kimi maddeler tamamlanmış"),
             ["birden fazla görev listesi, tamamlananları tek dokunuşla temizleme ve Google Görevler "
              "eşitlemesi — yani o e-postayla ilgili yapman gereken şey, e-postanın yanında duruyor."],
             flip=True),
     feature("offline", "uçakta da çalışan bir posta uygulaması",
-            shot("shot-offline.svg", "iletiler okunabilir kalırken çevrimdışı uyarısı gösteren posta görünümü"),
+            shot("offline", "internetin çevrimdışı olduğunu bildiren ağ paneli, arkasında ileti listesi hâlâ okunabilir durumda"),
             ["posta kutuları yerel bir veritabanına eşitlenir; böylece postan, eklerin, satır içi "
              "görsellerin ve arama bağlantı olmadan da çalışmaya devam eder.",
              "çevrimdışıyken yaptığın her şey kuyruğa alınır ve döndüğünde tekrar oynatılır; istediğin "
              "an tam ya da posta kutusu bazında eşitleme başlatabilirsin."]),
     feature("appearance", "kendine göre ayarla",
-            shot("shot-appearance.svg", "açık, koyu ve sistemi izle tema kartları ile dil listesini gösteren görünüm ayarları"),
+            shot("appearance", "açık, koyu ve sistemi izle tema kartlarının altında yazı tipi seçicisini gösteren görünüm ayarları"),
             ["açık ve koyu temalar, artı sistemi izleme, ve dosyadan içe aktarabildiğin özel temalar. "
              "uygulamayla birlikte 64 arayüz dili geliyor; hepsi depo üzerinden katkı olarak geldi.",
              "guvercin Hanken Grotesk ile gelir ve okuma yazı tipini hesap başına değiştirmene izin verir."],
@@ -454,11 +454,11 @@ FEATURES_BODY = "".join([
                      "…ve 40 tane daha"],
             flip=True),
     feature("keyboard", "her kısayol senin, değiştirebilirsin",
-            shot("shot-keyboard.svg", "tuş görselleri ve anahtarlarıyla posta ve gezinme kısayollarını listeleyen kısayol ayarları"),
+            shot("keyboard", "tuş görselleri ve anahtarlarıyla posta ve gezinme kısayollarını listeleyen kısayol ayarları"),
             ["kısayollar posta işlemleri, gezinme ve sekmeler, görünüm ve yerleşim, yazma ve uygulama "
              "diye gruplanmıştır; her biri tek tek yeniden atanabilir ya da kapatılabilir."]),
     feature("privacy", "hiçbir şey görmeyelim diye tasarlandı",
-            shot("shot-privacy.svg", "yerel şifrelemenin her zaman açık, telemetrinin ise mevcut olmadığını gösteren gizlilik ayarları"),
+            shot("privacy", "saklanan verinin SQLCipher ve XChaCha20 üzerinden AES-256 ile şifrelendiğini gösteren, açık konumdaki şifreleme ayarı"),
             ["her veritabanı SQLCipher ile şifrelidir, önbelleğe alınan dosyalar da "
              "XChaCha20-Poly1305 ile mühürlenir; bu kapatılamaz. onları açan anahtar, kullanıcı "
              "profilindeki bir dosyadır ve senin adına çalışan her şey onu okuyabilir — bu yüzden "

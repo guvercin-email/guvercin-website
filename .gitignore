@@ -13,3 +13,6 @@ __pycache__/
 .DS_Store
 **/.DS_Store
 Thumbs.db
+
+# Screenshot intermediates — the WebP files in assets/img/ are what ships.
+tools/shots/

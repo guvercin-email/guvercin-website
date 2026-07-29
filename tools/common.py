@@ -24,12 +24,34 @@ RELEASE_DATE = {"en": "29 July 2026", "tr": "29 Temmuz 2026"}
 DMG_MB = 28  # guvercin_0.1.0_universal.dmg, 28,922,411 bytes
 
 def shot(name, alt, eager=False, cls="frame"):
-    load = "eager" if eager else "lazy"
-    fetch = ' fetchpriority="high"' if eager else ""
-    return (
-        f'<div class="{cls}"><img src="assets/img/{name}" width="1600" height="1000" '
-        f'alt="{alt}" loading="{load}" decoding="async"{fetch}></div>'
-    )
+    """A screenshot of the running app, in both themes.
+
+    `name` is the stem: shot("mail", …) emits shot-mail-light.webp and
+    shot-mail-dark.webp, and CSS shows whichever matches the page theme. The
+    hidden one is display:none, which also drops it from the accessibility
+    tree, so carrying the same alt on both never reads out twice.
+
+    These are captured from try.guvercin.email — the real interface over a mock
+    backend — by tools/capture_shots.mjs. The data in them is invented; the
+    pixels are not.
+    """
+    def one(theme):
+        # A display:none image is never fetched, so the theme that is not on
+        # screen costs nothing. Only the light variant is eager: it is the one
+        # the CSS shows before the inline theme script has run, and priming
+        # both would double the bytes of the largest image on the page. A dark
+        # hero still loads at once — it is in the viewport, where lazy only
+        # drops the priority hint, not the fetch.
+        first = eager and theme == "light"
+        load = "eager" if first else "lazy"
+        fetch = ' fetchpriority="high"' if first else ""
+        return (
+            f'<img class="shot shot--{theme}" src="assets/img/shot-{name}-{theme}.webp" '
+            f'width="1600" height="1000" alt="{alt}" loading="{load}" '
+            f'decoding="async"{fetch}>'
+        )
+
+    return f'<div class="{cls}">{one("light")}{one("dark")}</div>'
 
 
 def icon(paths):

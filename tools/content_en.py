@@ -78,7 +78,7 @@ INDEX = f"""<main id="main">
       <a href="{REPO}" target="_blank" rel="noopener">view on GitHub</a></p>
   </div>
   <div class="wrap hero__figure">
-    {shot('shot-mail.svg', 'the guvercin mail view: a folder tree on the left, a message list in the middle and the open message on the right', eager=True, cls='frame frame--hero')}
+    {shot('mail', 'the guvercin mail view: a folder tree on the left, a message list in the middle and the open message on the right', eager=True, cls='frame frame--hero')}
   </div>
 </section>
 
@@ -140,7 +140,7 @@ INDEX = f"""<main id="main">
   <div class="wrap">
     <div class="split">
       <div class="split__media reveal">
-        {shot('shot-offline.svg', 'the mail view with an offline notice at the top, still showing messages from the local copy')}
+        {shot('offline', 'the network panel open over the mail view, reporting the internet as offline while the message list stays readable from the local copy')}
       </div>
       <div class="reveal">
         <h2>email that feels like a desktop app</h2>
@@ -341,7 +341,7 @@ DOWNLOAD = f"""<main id="main">
   <div class="wrap">
     <div class="split">
       <div class="split__media reveal">
-        {shot('shot-signin.svg', 'the add-an-account dialog with a continue with Google button and detected IMAP and SMTP server settings')}
+        {shot('signin', 'the add-an-account dialog with a continue with Google button and detected IMAP and SMTP server settings')}
       </div>
       <div class="reveal">
         <h2>add your account in three steps</h2>
@@ -408,7 +408,7 @@ def feature(anchor, title, media, paragraphs, bullets=None, flip=False):
 
 FEATURES_BODY = "".join([
     feature("mail", "an inbox that behaves",
-            shot("shot-mail.svg", "the mail view with the folder tree, message list and reading pane side by side"),
+            shot("mail", "the mail view with the folder tree, message list and reading pane side by side"),
             ["several IMAP and SMTP accounts side by side, each with its own local database. a full "
              "folder tree you can reorder, custom label ordering, and a choice of how unread counts "
              "appear.",
@@ -420,7 +420,7 @@ FEATURES_BODY = "".join([
              "block a sender, with the rule stored locally",
              "print a message"]),
     feature("sign-in", "one click for Google, plain IMAP for everyone else",
-            shot("shot-signin.svg", "the add-an-account dialog offering Google sign-in above a manual email and password form"),
+            shot("signin", "the add-an-account dialog offering Google sign-in above a manual email and password form"),
             ["“continue with Google” runs an OAuth2 (XOAUTH2) PKCE flow in your system browser, so your "
              "password is never typed into guvercin and no token ever passes through the interface. the "
              "app ships with a working OAuth client, so it works out of the box.",
@@ -429,7 +429,7 @@ FEATURES_BODY = "".join([
              "Yandex, iCloud, Fastmail and self-hosted servers."],
             flip=True),
     feature("composer", "write properly",
-            shot("shot-composer.svg", "a popped-out compose window with a formatting ribbon, address fields and two attached files"),
+            shot("composer", "a popped-out compose window with a formatting ribbon, address fields and two attached files"),
             ["a rich-text WYSIWYG editor with a formatting ribbon, drag &amp; drop attachments, and a "
              "compose window you can pop out into its own native window. drafts save locally and can "
              "be sent later.",
@@ -437,29 +437,29 @@ FEATURES_BODY = "".join([
              "message with it already attached — registered automatically on Windows and Linux. on "
              "macOS, drag the file onto the window or use Open With."]),
     feature("calendar", "your week, in the same window",
-            shot("shot-calendar.svg", "a month view of the built-in calendar with several coloured events"),
+            shot("calendar", "a month view of the built-in calendar with several coloured events"),
             ["multiple calendars per account, CalDAV sync against your own server, Google Calendar "
              "sync, and .ics import and export.",
              "it sits beside your mail rather than in another tab, which is the entire point."],
             flip=True),
     feature("contacts", "an address book that is actually yours",
-            shot("shot-contacts.svg", "the contacts view with a searchable list and a contact detail panel"),
+            shot("contacts", "the contacts view with a searchable list and a contact detail panel"),
             ["contact lists and groups, vCard import and export, and Google Contacts sync.",
              "sender avatars are resolved when a message is displayed, and addresses autocomplete "
              "while you write."]),
     feature("tasks", "todos next to your mail",
-            shot("shot-tasks.svg", "three task lists shown side by side with checkboxes, some items completed"),
+            shot("tasks", "three task lists shown side by side with checkboxes, some items completed"),
             ["multiple task lists, one-tap clearing of completed items, and Google Tasks sync — so the "
              "thing you were supposed to do about that email lives beside the email."],
             flip=True),
     feature("offline", "a plane-friendly mail client",
-            shot("shot-offline.svg", "the mail view showing an offline notice while messages remain readable"),
+            shot("offline", "the network panel reporting the internet as offline, with the message list still readable behind it"),
             ["mailboxes sync into a local database, so mail, attachments, inline images and search all "
              "keep working with no connection.",
              "anything you do offline is queued and replayed when you are back, and you can trigger a "
              "full or per-mailbox sync whenever you want."]),
     feature("appearance", "make it yours",
-            shot("shot-appearance.svg", "the appearance settings with light, dark and follow-system theme cards and a list of languages"),
+            shot("appearance", "the appearance settings with light, dark and follow-system theme cards above a font picker"),
             ["light and dark themes plus follow-the-system, and custom themes you can import from a "
              "file. 64 interface languages ship with the app, all contributed through the repository.",
              "guvercin ships with Hanken Grotesk and lets you change the reading font per account."],
@@ -469,11 +469,11 @@ FEATURES_BODY = "".join([
                      "…and 40 more"],
             flip=True),
     feature("keyboard", "every shortcut is yours to change",
-            shot("shot-keyboard.svg", "the shortcuts settings listing mail and navigation shortcuts with keycaps and toggles"),
+            shot("keyboard", "the shortcuts settings listing mail and navigation shortcuts with keycaps and toggles"),
             ["shortcuts are grouped into mail actions, navigation and tabs, view and layout, compose "
              "and application, and every single one can be rebound or switched off."]),
     feature("privacy", "designed so we never see anything",
-            shot("shot-privacy.svg", "the privacy settings showing local encryption always on and telemetry listed as not present"),
+            shot("privacy", "the encryption setting, with stored data encrypted using AES-256 through SQLCipher and XChaCha20, switched on"),
             ["every database is SQLCipher-encrypted and cached files are sealed with "
              "XChaCha20-Poly1305. that cannot be switched off. the key that unlocks them is a file "
              "in your user profile, readable by anything running as you, so keep full-disk "
