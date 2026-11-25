@@ -29,6 +29,20 @@
 <link rel="apple-touch-icon" href="../assets/img/apple-touch-icon.png">
 <link rel="manifest" href="../site.webmanifest">
 <link rel="stylesheet" href="../assets/css/style.css">
+<!-- Optional Google Analytics 4. Set GA_MEASUREMENT_ID to your G-... ID to enable. -->
+<script>
+  window.GA_MEASUREMENT_ID = "G-8LWJP0L3E1";
+  if (/^G-[A-Z0-9]+$/.test(window.GA_MEASUREMENT_ID)) {
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + window.GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", window.GA_MEASUREMENT_ID);
+  }
+</script>
 <script>
 /* Theme and language, settled before first paint so nothing flashes and nobody
    lands in the wrong language. Both are plain preferences, stored locally. */
@@ -104,11 +118,11 @@ if(want!==here&&location.protocol.indexOf("http")===0){location.replace(want==="
       reklam ya da takip kodu bulunmaz.</p>
 
     <h2 id="website" style="font-size:24px">Web sitesi</h2>
-    <p>guvercin.email statik bir sitedir. Reklam veya takip çerezi kullanmaz, analitik kullanmaz ve
-      ziyaretçi profili çıkarmaz. Tarayıcınızda saklanan tek şey açık veya koyu tema tercihiniz ve
-      dil tercihinizdir. Barındırma sağlayıcımız güvenlik ve güvenilirlik için standart sunucu
-      günlükleri (IP adresi, tarayıcı türü, istenen sayfa) tutabilir. İndirmeler GitHub üzerinden
-      sunulur; bir sürüm indirdiğinizde GitHub'ın kendi gizlilik politikası geçerlidir.</p>
+    <p>guvercin.email statik bir sitedir. Google Analytics 4, sayfa görüntülemelerini ve tahmini tekil ziyaretçi sayısını ölçer. Google, kullanım ve cihaz verilerini
+      kendi gizlilik koşullarına göre işleyebilir. Tarayıcınızda açık/koyu tema ve dil tercihiniz
+      saklanır. Barındırma sağlayıcımız güvenlik ve güvenilirlik için standart sunucu günlükleri
+      (IP adresi, tarayıcı türü, istenen sayfa) tutabilir. İndirmeler GitHub üzerinden sunulur; bir
+      sürüm indirdiğinizde GitHub'ın kendi gizlilik politikası geçerlidir.</p>
 
     <h2 id="email" style="font-size:24px">E-posta</h2>
     <p><a href="mailto:hello@guvercin.email">hello@guvercin.email</a> veya

@@ -29,6 +29,20 @@
 <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Optional Google Analytics 4. Set GA_MEASUREMENT_ID to your G-... ID to enable. -->
+<script>
+  window.GA_MEASUREMENT_ID = "G-8LWJP0L3E1";
+  if (/^G-[A-Z0-9]+$/.test(window.GA_MEASUREMENT_ID)) {
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + window.GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag("js", new Date());
+    gtag("config", window.GA_MEASUREMENT_ID);
+  }
+</script>
 <script>
 /* Theme and language, settled before first paint so nothing flashes and nobody
    lands in the wrong language. Both are plain preferences, stored locally. */
@@ -103,11 +117,11 @@ if(want!==here&&location.protocol.indexOf("http")===0){location.replace(want==="
       advertising or tracking code.</p>
 
     <h2 id="website" style="font-size:24px">The website</h2>
-    <p>guvercin.email is a static site. It sets no advertising or tracking cookies, uses no analytics,
-      and does not build profiles of visitors. The only thing stored in your browser is your light or
-      dark theme preference. Our hosting provider may keep standard server logs (IP address, browser
-      type, requested page) for security and reliability. Downloads are served from GitHub; GitHub's
-      own privacy policy applies when you download a release.</p>
+    <p>guvercin.email is a static site. Google Analytics 4 measures page views and estimates unique visitors. Google may process usage and device data under its own privacy
+      terms. Your light or dark theme preference is stored in your browser. Our hosting provider may
+      keep standard server logs (IP address, browser type, requested page) for security and
+      reliability. Downloads are served from GitHub; GitHub's own privacy policy applies when you
+      download a release.</p>
 
     <h2 id="email" style="font-size:24px">Email</h2>
     <p>If you write to <a href="mailto:hello@guvercin.email">hello@guvercin.email</a> or

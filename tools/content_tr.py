@@ -876,11 +876,11 @@ PRIVACY = """<main id="main">
       reklam ya da takip kodu bulunmaz.</p>
 
     <h2 id="website" style="font-size:24px">Web sitesi</h2>
-    <p>guvercin.email statik bir sitedir. Reklam veya takip çerezi kullanmaz, analitik kullanmaz ve
-      ziyaretçi profili çıkarmaz. Tarayıcınızda saklanan tek şey açık veya koyu tema tercihiniz ve
-      dil tercihinizdir. Barındırma sağlayıcımız güvenlik ve güvenilirlik için standart sunucu
-      günlükleri (IP adresi, tarayıcı türü, istenen sayfa) tutabilir. İndirmeler GitHub üzerinden
-      sunulur; bir sürüm indirdiğinizde GitHub'ın kendi gizlilik politikası geçerlidir.</p>
+    <p>guvercin.email statik bir sitedir. Google Analytics 4, sayfa görüntülemelerini ve tahmini tekil ziyaretçi sayısını ölçer. Google, kullanım ve cihaz verilerini
+      kendi gizlilik koşullarına göre işleyebilir. Tarayıcınızda açık/koyu tema ve dil tercihiniz
+      saklanır. Barındırma sağlayıcımız güvenlik ve güvenilirlik için standart sunucu günlükleri
+      (IP adresi, tarayıcı türü, istenen sayfa) tutabilir. İndirmeler GitHub üzerinden sunulur; bir
+      sürüm indirdiğinizde GitHub'ın kendi gizlilik politikası geçerlidir.</p>
 
     <h2 id="email" style="font-size:24px">E-posta</h2>
     <p><a href="mailto:hello@guvercin.email">hello@guvercin.email</a> veya

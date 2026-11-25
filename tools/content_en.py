@@ -889,11 +889,11 @@ PRIVACY = """<main id="main">
       advertising or tracking code.</p>
 
     <h2 id="website" style="font-size:24px">The website</h2>
-    <p>guvercin.email is a static site. It sets no advertising or tracking cookies, uses no analytics,
-      and does not build profiles of visitors. The only thing stored in your browser is your light or
-      dark theme preference. Our hosting provider may keep standard server logs (IP address, browser
-      type, requested page) for security and reliability. Downloads are served from GitHub; GitHub's
-      own privacy policy applies when you download a release.</p>
+    <p>guvercin.email is a static site. Google Analytics 4 measures page views and estimates unique visitors. Google may process usage and device data under its own privacy
+      terms. Your light or dark theme preference is stored in your browser. Our hosting provider may
+      keep standard server logs (IP address, browser type, requested page) for security and
+      reliability. Downloads are served from GitHub; GitHub's own privacy policy applies when you
+      download a release.</p>
 
     <h2 id="email" style="font-size:24px">Email</h2>
     <p>If you write to <a href="mailto:hello@guvercin.email">hello@guvercin.email</a> or

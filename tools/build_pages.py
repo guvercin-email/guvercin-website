@@ -64,6 +64,20 @@ def head(mod, page, title, desc, extra=""):
 <link rel="apple-touch-icon" href="{up}assets/img/apple-touch-icon.png">
 <link rel="manifest" href="{up}site.webmanifest">
 <link rel="stylesheet" href="{up}assets/css/style.css">
+<!-- Optional Google Analytics 4. Set GA_MEASUREMENT_ID to your G-... ID to enable. -->
+<script>
+  window.GA_MEASUREMENT_ID = "G-8LWJP0L3E1";
+  if (/^G-[A-Z0-9]+$/.test(window.GA_MEASUREMENT_ID)) {{
+    var gaScript = document.createElement("script");
+    gaScript.async = true;
+    gaScript.src = "https://www.googletagmanager.com/gtag/js?id=" + window.GA_MEASUREMENT_ID;
+    document.head.appendChild(gaScript);
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){{dataLayer.push(arguments);}}
+    gtag("js", new Date());
+    gtag("config", window.GA_MEASUREMENT_ID);
+  }}
+</script>
 <script>
 /* Theme and language, settled before first paint so nothing flashes and nobody
    lands in the wrong language. Both are plain preferences, stored locally. */
